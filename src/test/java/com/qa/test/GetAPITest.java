@@ -110,6 +110,7 @@ public class GetAPITest extends TestBase {
 	        	   
 	        	   HashMap<String, String> hashMap= new HashMap<String, String>();
 	        	   hashMap.put("Content-Type", "application/json");
+	        	   //add like below for whatever header request you have
 	        	  // headerMap.put("username", "sumit");
 	        	  // headerMap.put("password", "test@123");
 	        	   //headerMap.put("auth Token", "12345");
