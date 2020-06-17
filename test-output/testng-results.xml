@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-15T18:36:47Z" name="Default suite" finished-at="2020-06-15T18:36:48Z" duration-ms="1606">
+  <suite started-at="2020-06-17T17:12:47Z" name="Default suite" finished-at="2020-06-17T17:12:49Z" duration-ms="2071">
     <groups>
     </groups>
-    <test started-at="2020-06-15T18:36:47Z" name="Default test" finished-at="2020-06-15T18:36:48Z" duration-ms="1606">
-      <class name="com.qa.test.PostAPITest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.PostAPITest@757acd7b]" started-at="2020-06-15T18:36:47Z" name="setup" finished-at="2020-06-15T18:36:47Z" duration-ms="22" status="PASS">
+    <test started-at="2020-06-17T17:12:47Z" name="Default test" finished-at="2020-06-17T17:12:49Z" duration-ms="2071">
+      <class name="com.qa.test.PutAPITest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.PutAPITest@757acd7b]" started-at="2020-06-17T17:12:47Z" name="setup" finished-at="2020-06-17T17:12:47Z" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="postAPITest()[pri:0, instance:com.qa.test.PostAPITest@757acd7b]" started-at="2020-06-15T18:36:47Z" name="postAPITest" finished-at="2020-06-15T18:36:48Z" duration-ms="1568" status="PASS">
+        <test-method signature="putAPITest()[pri:0, instance:com.qa.test.PutAPITest@757acd7b]" started-at="2020-06-17T17:12:47Z" name="putAPITest" finished-at="2020-06-17T17:12:49Z" duration-ms="2025" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postAPITest -->
-      </class> <!-- com.qa.test.PostAPITest -->
+        </test-method> <!-- putAPITest -->
+      </class> <!-- com.qa.test.PutAPITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

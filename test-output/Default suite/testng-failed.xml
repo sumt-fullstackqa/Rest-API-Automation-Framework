@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.test.PostAPITest">
+      <class name="com.qa.test.PutAPITest">
         <methods>
           <include name="setup"/>
-          <include name="postAPITest"/>
+          <include name="putAPITest"/>
         </methods>
-      </class> <!-- com.qa.test.PostAPITest -->
+      </class> <!-- com.qa.test.PutAPITest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

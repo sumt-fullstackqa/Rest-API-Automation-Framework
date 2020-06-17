@@ -10,6 +10,7 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.methods.HttpPut;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
@@ -61,6 +62,29 @@ public class RestClient {
 		
 		
           CloseableHttpResponse closeablehttpresponse= httpClient.execute(httppost);
+          
+          return closeablehttpresponse;
+		
+	}
+	
+	//4. Put Method:
+	
+	public CloseableHttpResponse put(String url, String entityString, HashMap<String, String> headermap) throws ClientProtocolException, IOException {
+		
+		CloseableHttpClient httpClient = HttpClients.createDefault();
+		HttpPut httpPut = new HttpPut(url);// http put request 
+		
+		httpPut.setEntity(new StringEntity(entityString));// for payload
+		
+		// For headers 
+		
+          for(Map.Entry<String,String> entry : headermap.entrySet()) {
+			
+        	  httpPut.addHeader(entry.getKey(), entry.getValue());
+		}
+		
+		
+          CloseableHttpResponse closeablehttpresponse= httpClient.execute(httpPut);
           
           return closeablehttpresponse;
 		
